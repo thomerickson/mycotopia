@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
+	<!-- No icon
 	<link rel="icon" href="">
+	-->
 
 	<title>mycotopia - edible mushroom gardens cultivated in portland, ore</title>
 
@@ -17,8 +19,24 @@
 	<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
 
-	<!-- Custom styles for this template -->
+	<!-- Inline styles -->
 	<style>
+		@media all and (min-width: 600px) {
+			body {
+				font-size: 1rem;
+			}
+		}
+		
+		@media all and (max-width: 599px) and (min-width: 320px) {
+			body {
+				font-size: .8rem;
+			}
+			.nav-item {
+				width: 10vw;
+				font-size: .6rem;
+			}
+		}
+		
 		.navbar {
 			-webkit-transition: all 0.6s ease-out;
 			-moz-transition: all 0.6s ease-out;
@@ -27,8 +45,12 @@
 			transition: all 0.6s ease-out;
 		}
 		
+		.navbar-inverse .navbar-nav .nav-link:hover {
+			color: #b7996a;
+		}
+		
 		.bg-dark {
-			background-color: rgba(0, 0, 0, 0);
+			background-color: rgba(0, 0, 0, 1.0);
 		}
 		
 		.scrolled {
@@ -63,6 +85,7 @@
 		.navbar-nav {
 			display: inline-block;
 			float: none;
+			text-align: center;
 		}
 		
 		.nav-link.font-brand {
@@ -76,6 +99,10 @@
 		
 		.font-fancy {
 			font-family: Caveat;
+		}
+		
+		.card-custom {
+			background-color: #b7996a
 		}
 		
 		#top {
@@ -96,12 +123,15 @@
 			min-height: 50vh;
 		}
 		
+		#instructions {
+			background-color: #333533;
+		}
+		
 		#contact {
-			background-color: darkslategray;
+			background-color: #111;
 			background-image: url(assets/images/newsletter-bg.png);
 			background-size: cover;
 			background-attachment: fixed;
-			min-height: 50vh;
 		}
 
 	</style>
@@ -110,16 +140,18 @@
 <body>
 
 	<nav class="navbar navbar-inverse bg-dark fixed-top" id="fixedbar">
-		<ul class="navbar-nav mx-auto">
-			<li class="nav-item">
+		<ul class="navbar-nav mx-auto justify-content-center">
+			<li class="nav-item ">
 				<a class="nav-link font-brand" href="#top">mycotopia</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#products">Products</a>
 			</li>
+			<!-- hide story for now
 			<li class="nav-item">
 				<a class="nav-link" href="#story">Our Story</a>
 			</li>
+			-->
 			<li class="nav-item">
 				<a class="nav-link" href="#instructions">Instructions</a>
 			</li>
@@ -138,45 +170,115 @@
 
 	</div>
 	<!-- /.top -->
+
 	<div class="container-fluid" id="products">
-		<div class="col-8 mx-auto pt-3">
+		<div class="col-md-8 mx-auto py-3">
 			<h1 class="font-fancy">Products</h1>
-			<div class="row">
-				<div class="col-4">
-					<img src="assets/images/many_boxes.jpg" class="img-fluid">
-				</div>
-				<div class="col-8">
-					<p>We are now offering our organic edible Mushroom garden kits. Featuring our first cultivar, Blue Oyster Mushrooms!</p>
-					<p>
-						Find us at the Hollywood Farmer's Market, every Saturday from 8am-1pm, May-October.
-					</p>
-					<p>
-						Coming soon to local Portland businesses!
-					</p>
-				</div>
-			</div>
+			<img src="assets/images/oyster_bag.jpg" class="float-left mr-4 mb-4 col-md-6 rounded">
+			<p>We are now offering our organic edible Mushroom garden kits. Featuring our first cultivar, Blue Oyster Mushrooms!</p>
+			<p class="clearfix d-inline-block">
+				Find us at the <a href="http://hollywoodfarmersmarket.org/">Hollywood Farmer's Market</a> every Saturday from 8am-1pm, May-October.
+			</p>
+			<p>
+				Coming soon to local Portland businesses!
+			</p>
 		</div>
+	</div>
+	</div>
 
 	</div>
 	<!-- /.products -->
+	<!-- Hide story for now
 	<div class="container-fluid" id="story">
-		<div class="col-8 mx-auto pt-3">
+		<div class="col-md-8  col-sm-12 mx-auto pt-3">
 			<h1 class="font-fancy">Story</h1>
 			<p>(1955 Doc is at the clocktower. He's on it holding the cables. He watches the DeLorean from the first movie, with 1955 Marty inside, approach the clocktower. Doc finishes connecting everything and then slides down the rope.) Argh! (The DeLorean hits 88mph and lets off blue flashes - it's about ready to travel through time. Cut to Doc. Doc gets the cable out of the branch. Lightning strikes it, and the lightning causes electricity to go down the cables, which Doc reconnects just in time, getting himself a slight electric shock as he does so.) Ahh! (The lightning enters the flux capacitor. 1955 Marty gets sent back to 1985. Doc dances with delight because the experiment was successful.) Yoo! It works! Ha, ha, ha! (And then he turns to the Courthouse. After looking at it, he turns to his car - and 1985 Marty comes running up to him.) Doc! Doc! Doc!</p>
 		</div>
 	</div>
+	-->
 	<!-- /.story -->
+
 	<div class="container-fluid" id="instructions">
-		<div class="col-8 mx-auto pt-3">
+		<div class="col-md-8 col-sm-12 mx-auto pt-3 pb-3">
 			<h1 class="font-fancy">Instructions</h1>
-			<p>(1955 Doc is at the clocktower. He's on it holding the cables. He watches the DeLorean from the first movie, with 1955 Marty inside, approach the clocktower. Doc finishes connecting everything and then slides down the rope.) Argh! (The DeLorean hits 88mph and lets off blue flashes - it's about ready to travel through time. Cut to Doc. Doc gets the cable out of the branch. Lightning strikes it, and the lightning causes electricity to go down the cables, which Doc reconnects just in time, getting himself a slight electric shock as he does so.) Ahh! (The lightning enters the flux capacitor. 1955 Marty gets sent back to 1985. Doc dances with delight because the experiment was successful.) Yoo! It works! Ha, ha, ha! (And then he turns to the Courthouse. After looking at it, he turns to his car - and 1985 Marty comes running up to him.) Doc! Doc! Doc!</p>
+
+			<div class="row justify-content-center">
+				<div class="col-sm-3 justify-content-center py-2">
+					<img src="assets/images/steps-remove-bag.jpg" class="rounded img-fluid">
+				</div>
+				<div class="col-sm-9">
+					<p>
+						Remove the inner bag containing mushroom spawn from the paper packaging.
+					</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center py-2">
+				<div class="col-sm-3 justify-content-center flex-last">
+					<img src="assets/images/steps-cut-out.jpg" class="rounded img-fluid">
+				</div>
+				<div class="col-sm-9">
+					<p>
+						Cut out instructions on the dotted line. Replace the inner bag into paper packaging.
+					</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center py-2">
+				<div class="col-sm-3 justify-content-center">
+					<img src="assets/images/steps-cut-x.jpg" class="rounded img-fluid">
+				</div>
+				<div class="col-sm-9">
+					<p>
+						Cut a roughly 3 inch by 3 inch "X" shape into the plastic spawn bag. This exposes the spawn to air and begins the fruiting process!
+					</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center py-2">
+				<div class="col-sm-3 justify-content-center flex-last">
+					<img src="assets/images/myco_bag_growing.jpg" class="rounded img-fluid">
+				</div>
+				<div class="col-sm-9">
+					<p>
+						Place the kit in a well-lit (but out of direct sunlight!), humid location. <em>Mist three times daily,</em> but try to avoid filling the bag with standing water.
+					</p>
+					<p>
+						Mushrooms grow best between 68-75°F.
+					</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center py-2">
+				<div class="col-12 card card-custom p-2 text-center">
+					<p>
+						Mushrooms are ready to harvest when caps begin to turn upwards (or when you notice that daily growth has slowed rapidly). This process usually takes between 5-12 days.
+					</p>
+					<p>
+						After harvesting, turn the inner spawn bag around and slice a new opening to begin the process again! Further harvests take longer to begin fruiting, so be patient. Enjoy!
+					</p>
+				</div>
+			</div>
+
 		</div>
 	</div>
 	<!-- /.instructions -->
+
 	<div class="container-fluid" id="contact">
-		<div class="col-8 mx-auto pt-3">
+		<div class="col-md-8 col-sm-12 mx-auto pt-3 pb-3">
 			<h1 class="font-fancy">Contact Us</h1>
-			<p>Yeah, sure, okay. Marty, you interacted with anybody else today, besides me? (guiltily) Um, yeah well I might have sort of ran into my parents. Great Scott. Let me see that photograph again of your brother. (Marty gives it to him) Just as I thought, this proves my theory, look at your brother. His head's gone, it's like it's been erased.</p>
+			<form action="https://formspree.io/sunfoxgardens@gmail.com" method="POST">
+				<div class="form-group">
+					<label for="contact-body"></label>
+					<textarea class="form-control" id="contact-body" name="body" rows="5" placeholder="Got any questions?" required></textarea>
+				</div>
+				<div class="form-group">
+					<label for="userEmail">Your email address</label>
+					<input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="you@domain.com" name="_replyto" required>
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else or send any unsolicited emails.</small>
+				</div>
+				<button type="submit" class="btn btn-warning" vakue="Send">Send</button>
+			</form>
 		</div>
 	</div>
 	<!-- /.contact -->
@@ -186,7 +288,6 @@
 ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="assets/js/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<!-- InlineScripts -->
 	<script>
@@ -199,12 +300,13 @@
 
 			function checkScroll() {
 				var startY = $('#top').height() - $("#fixedbar").outerHeight(true); //The point where the navbar changes in px
-
+				/* Don't do transparent navbar for now
 				if ($(window).scrollTop() > startY) {
 					$('#fixedbar').addClass("scrolled");
 				} else {
 					$('#fixedbar').removeClass("scrolled");
 				}
+				*/
 			}
 
 			$(window).on("scroll load resize", function() {
