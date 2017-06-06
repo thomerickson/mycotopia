@@ -127,8 +127,17 @@
 			background-color: #333533;
 		}
 		
+		.instructions-number {
+			font-size: 1.5em;
+			text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+		}
+		
+		.text-smaller {
+			font-size: .8rem;
+		}
+		
 		#contact {
-			background-color: #111;
+			background-color: darkslategray;
 			background-image: url(assets/images/newsletter-bg.png);
 			background-size: cover;
 			background-attachment: fixed;
@@ -174,7 +183,9 @@
 	<div class="container-fluid" id="products">
 		<div class="col-md-8 mx-auto py-3">
 			<h1 class="font-fancy">Products</h1>
-			<img src="assets/images/oyster_bag.jpg" class="float-left mr-4 mb-4 col-md-6 rounded">
+			<div class="float-left mr-4 mb-4 col-md-4">
+			<img src="assets/images/oyster_bag.jpg" class="float-left img-fluid rounded">
+			</div>
 			<p>We are now offering our organic edible Mushroom garden kits. Featuring our first cultivar, Blue Oyster Mushrooms!</p>
 			<p>
 				Find us at the <a href="http://hollywoodfarmersmarket.org/">Hollywood Farmer's Market</a> every Saturday from 8am-1pm, May-October.
@@ -199,67 +210,42 @@
 	<!-- /.story -->
 
 	<div class="container-fluid" id="instructions">
-		<div class="col-md-8 col-sm-12 mx-auto pt-3 pb-3">
+		<div class="col-md-8 col-sm-12 mx-auto py-3">
 			<h1 class="font-fancy">Instructions</h1>
 
-			<div class="row justify-content-center">
-				<div class="col-sm-3 justify-content-center py-2">
-					<img src="assets/images/steps-remove-bag.jpg" class="rounded img-fluid">
-				</div>
-				<div class="col-sm-9">
+
+			<img src="assets/images/Instructions.jpg" class="img-fluid rounded d-block mb-2">
+			<div class="row my-md-5 my-xs-2">
+				<div class="col-md-8">
 					<p>
-						Remove the inner bag containing mushroom spawn from the paper packaging.
+						<span class="instructions-number font-fancy text-primary mr-2">1. </span> Remove the inner bag containing mushroom spawn from the paper packaging.
 					</p>
+					<p>
+						<span class="instructions-number font-fancy text-primary mr-2">2. </span> Cut out instructions along dotted line. Replace inner bag into packaging.
+					</p>
+					<p>
+						<span class="instructions-number font-fancy text-primary mr-2">3. </span> Cut a 3 by 3 inch "X" into exposed inner bag. Be sure to mist the opening ~3 times daily.
+					</p>
+				</div>
+				
+				<div class="card card-primary col-md-4 p-2 mb-3">
+					<h3 class="font-fancy text-default">Growing Tips</h3>
+					<ul class="text-smaller">
+						<li>Oyster mushrooms grow best in a well-lit, well-ventiliated, and humid environment</li>
+						<li>Avoid placing in direct sunlight</li>
+						<li>For best results, keep between 68-75°F</li>
+					</ul>
 				</div>
 			</div>
-
-			<div class="row justify-content-center py-2">
-				<div class="col-sm-3 justify-content-center flex-last">
-					<img src="assets/images/steps-cut-out.jpg" class="rounded img-fluid">
-				</div>
-				<div class="col-sm-9">
-					<p>
-						Cut out instructions on the dotted line. Replace the inner bag into paper packaging.
-					</p>
-				</div>
-			</div>
-
-			<div class="row justify-content-center py-2">
-				<div class="col-sm-3 justify-content-center">
-					<img src="assets/images/steps-cut-x.jpg" class="rounded img-fluid">
-				</div>
-				<div class="col-sm-9">
-					<p>
-						Cut a roughly 3 inch by 3 inch "X" shape into the plastic spawn bag. This exposes the spawn to air and begins the fruiting process!
-					</p>
-				</div>
-			</div>
-
-			<div class="row justify-content-center py-2">
-				<div class="col-sm-3 justify-content-center flex-last">
-					<img src="assets/images/myco_bag_growing.jpg" class="rounded img-fluid">
-				</div>
-				<div class="col-sm-9">
-					<p>
-						Place the kit in a well-lit (but out of direct sunlight!), humid location. <em>Mist three times daily,</em> but try to avoid filling the bag with standing water.
-					</p>
-					<p>
-						Mushrooms grow best between 68-75°F.
-					</p>
-				</div>
-			</div>
-
-			<div class="row justify-content-center py-2">
-				<div class="col-12 card card-custom p-2 text-center">
-					<p>
-						Mushrooms are ready to harvest when caps begin to turn upwards (or when you notice that daily growth has slowed rapidly). This process usually takes between 5-12 days.
-					</p>
-					<p>
-						After harvesting, turn the inner spawn bag around and slice a new opening to begin the process again! Further harvests take longer to begin fruiting, so be patient. Enjoy!
-					</p>
-				</div>
-			</div>
-
+			<p class="text-success">
+				Mushrooms are ready to harvest when caps begin to curl upward (around the time you notice that growth has slowed dramatically, usually between 5-12 days).
+			</p>
+			<p>
+				After harvesting, turn the inner spawn bag around and cut a new opening to begin growing another batch of mushrooms. Further growth takes a little more time to begin fruiting, so be patient and keep the mushroom spawn moist via misting.
+			</p>
+			<p>
+				Enjoy!
+			</p>
 		</div>
 	</div>
 	<!-- /.instructions -->
@@ -267,6 +253,7 @@
 	<div class="container-fluid" id="contact">
 		<div class="col-md-8 col-sm-12 mx-auto pt-3 pb-3">
 			<h1 class="font-fancy">Contact Us</h1>
+			<p>Email mycotopiamushrooms@gmail.com with any questions, or use the contact form below:</p>
 			<form action="https://formspree.io/sunfoxgardens@gmail.com" method="POST">
 				<div class="form-group">
 					<label for="contact-body"></label>
